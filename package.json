@@ -1,9 +1,9 @@
 {
   "name": "sample-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "frontend/javascript/index.js",
   "repository": "git@github.com:bridgetownrb/bridgetown-sample-plugin.git",
   "author": "Bridgetown Maintainers <maintainers@bridgetownrb.com>",
   "license": "MIT",
-  "private": true // remove this comment and change this to false to use NPM package
+  "private": false
 }
