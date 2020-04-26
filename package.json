@@ -1,5 +1,5 @@
 {
-  "name": "sample-plugin",
+  "name": "bridgetown-sample-plugin",
   "version": "0.1.1",
   "main": "frontend/javascript/index.js",
   "repository": "git@github.com:bridgetownrb/bridgetown-sample-plugin.git",
