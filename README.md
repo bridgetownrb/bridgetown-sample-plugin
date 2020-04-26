@@ -40,3 +40,8 @@ The plugin will automatically use any of the following metadata variables if the
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## Releasing
+
+To release a new version of the plugin, simply bump up the version number in both
+`version.rb` and `package.json, and then run `script/release`.
