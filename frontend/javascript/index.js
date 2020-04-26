@@ -1,5 +1,5 @@
 /* Use in your app by simply adding to your app's index.js:
-import SamplePlugin from "sample-plugin"
+import SamplePlugin from "bridgetown-sample-plugin"
 
 SamplePlugin()
 */
@@ -7,5 +7,5 @@ SamplePlugin()
 import "../styles/index.scss"
 
 export default function() {
-  console.log("My sample plugin has been loaded!")
+  console.log("Success! The sample plugin has been loaded.")
 }
