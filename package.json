@@ -5,5 +5,8 @@
   "repository": "git@github.com:bridgetownrb/bridgetown-sample-plugin.git",
   "author": "Bridgetown Maintainers <maintainers@bridgetownrb.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "files": [
+    "frontend"
+  ]
 }
