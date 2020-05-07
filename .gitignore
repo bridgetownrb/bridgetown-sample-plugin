@@ -15,9 +15,24 @@
 mkmf.log
 *.gem
 Gemfile.lock
-node_modules
-spec/dest
 .bundle
+.ruby-version
+
+# Node
+node_modules
+.npm
+.node_repl_history
+
+# Yarn
+yarn-error.log
+yarn-debug.log*
+.pnp/
+.pnp.js
+
+# Yarn Integrity file
+.yarn-integrity
+
+spec/dest
 .bridgetown-metadata
 .bridgetown-cache
-.ruby-version
+.bridgetown-webpack
