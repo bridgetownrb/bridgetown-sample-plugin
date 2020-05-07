@@ -15,6 +15,7 @@
 mkmf.log
 *.gem
 Gemfile.lock
+node_modules
 spec/dest
 .bundle
 .bridgetown-metadata
