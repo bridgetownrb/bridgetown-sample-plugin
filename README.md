@@ -1,6 +1,6 @@
 # Sample plugin for Bridgetown
 
-_NOTE: This isn't a real plugin! Copy this sample code and use it to create your own Ruby gem!_ 😃
+_NOTE: This isn't a real plugin! Copy this sample code and use it to create your own Ruby gem! [Help guide here…](https://www.bridgetownrb.com/docs/plugins)_ 😃
 
 A Bridgetown plugin to [fill in the blank]…
 

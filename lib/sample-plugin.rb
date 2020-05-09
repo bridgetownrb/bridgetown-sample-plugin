@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 require "bridgetown"
+require "sample-plugin/builder"
 
-module SamplePlugin
-  autoload :LiquidTag, "sample-plugin/liquid-tag"
-end
-
-Liquid::Template.register_tag "sample_plugin", SamplePlugin::LiquidTag
+Bridgetown::PluginManager.new_source_manifest(
+  origin: SamplePlugin,
+  components: File.expand_path("../components", __dir__),
+  content: File.expand_path("../content", __dir__),
+  layouts: File.expand_path("../layouts", __dir__)
+)
