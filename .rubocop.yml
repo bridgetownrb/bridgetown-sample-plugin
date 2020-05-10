@@ -1,7 +1,7 @@
-require: rubocop-jekyll
+require: rubocop-bridgetown
 
 inherit_gem:
-  rubocop-jekyll: .rubocop.yml
+  rubocop-bridgetown: .rubocop.yml
 
 AllCops:
   TargetRubyVersion: 2.5

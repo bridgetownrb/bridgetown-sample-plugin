@@ -10,7 +10,6 @@ describe(SamplePlugin) do
       "root_dir"     => root_dir,
       "source"       => source_dir,
       "destination"  => dest_dir,
-      "url"          => "http://example.org"
     }, overrides))
   end
   let(:metadata_overrides) { {} }
