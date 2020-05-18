@@ -1,6 +1,6 @@
 {
   "name": "bridgetown-sample-plugin",
-  "version": "0.1.3",
+  "version": "0.1.0",
   "main": "frontend/javascript/index.js",
   "repository": "git@github.com:bridgetownrb/bridgetown-sample-plugin.git",
   "author": "Bridgetown Maintainers <maintainers@bridgetownrb.com>",
