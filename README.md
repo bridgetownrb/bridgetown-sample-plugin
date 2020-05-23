@@ -43,7 +43,7 @@ The plugin will automatically use any of the following metadata variables if the
 To release a new version of the plugin, simply bump up the version number in both `version.rb` and
 `package.json`, and then run `script/release`. This will require you to have a registered account
 with both the [RubyGems.org](https://rubygems.org) and [NPM](https://www.npmjs.com) registries.
-You can also remove the package.json and `frontend` folder if you don't need to package frontend
+You can optionally remove the `package.json` and `frontend` folder if you don't need to package frontend
 assets for Webpack.
 
 If you run into any problems or need further guidance, please check out our [Bridgetown community resources](https://www.bridgetownrb.com/docs/community)
