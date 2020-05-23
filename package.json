@@ -2,8 +2,12 @@
   "name": "bridgetown-sample-plugin",
   "version": "0.1.0",
   "main": "frontend/javascript/index.js",
-  "repository": "git@github.com:bridgetownrb/bridgetown-sample-plugin.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bridgetownrb/bridgetown-sample-plugin.git"
+  },
   "author": "Bridgetown Maintainers <maintainers@bridgetownrb.com>",
+  "homepage": "https://www.bridgetownrb.com",
   "license": "MIT",
   "private": false,
   "files": [
