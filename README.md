@@ -14,6 +14,12 @@ Run this command to add this plugin to your site's Gemfile:
 $ bundle add my-awesome-plugin -g bridgetown_plugins
 ```
 
+Or if there's a `bridgetown.automation.rb` automation script, you can run that instead for guided setup:
+
+```ruby
+$ bundle exec bridgetown apply https://github.com/username/my-awesome-plugin
+```
+
 ## Usage
 
 The plugin will…
