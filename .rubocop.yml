@@ -7,10 +7,10 @@ AllCops:
   TargetRubyVersion: 2.5
   Include:
     - lib/**/*.rb
+    - test/**/*.rb
 
   Exclude:
     - .gitignore
-    - .rspec
     - .rubocop.yml
 
     - Gemfile.lock

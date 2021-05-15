@@ -32,7 +32,7 @@ yarn-debug.log*
 # Yarn Integrity file
 .yarn-integrity
 
-spec/dest
+test/dest
 .bridgetown-metadata
 .bridgetown-cache
 .bridgetown-webpack

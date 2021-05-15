@@ -32,8 +32,8 @@ The plugin will automatically use any of the following metadata variables if the
 
 ## Testing
 
-* Run `bundle exec rspec` to run the test suite
-* Or run `script/cibuild` to validate with Rubocop and test with rspec together.
+* Run `bundle exec rake test` to run the test suite
+* Or run `script/cibuild` to validate with Rubocop and Minitest together.
 
 ## Contributing
 
