@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r!^(test|script|spec|features|frontend)/!) }
-  spec.test_files    = spec.files.grep(%r!^spec/!)
+  spec.test_files    = spec.files.grep(%r!^test/!)
   spec.require_paths = ["lib"]
   spec.metadata      = { "yarn-add" => "bridgetown-sample-plugin@#{SamplePlugin::VERSION}" }
 
