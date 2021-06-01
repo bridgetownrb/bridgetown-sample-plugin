@@ -1,4 +1,4 @@
 #!/bin/bash
 set -ex
 
-bundle exec rspec "$@"
+bundle exec rake test "$@"
