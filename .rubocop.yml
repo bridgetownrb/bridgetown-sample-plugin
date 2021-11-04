@@ -5,18 +5,18 @@ inherit_gem:
 
 AllCops:
   TargetRubyVersion: 2.5
-  Include:
-    - lib/**/*.rb
-    - test/**/*.rb
 
   Exclude:
     - .gitignore
     - .rubocop.yml
+    - "*.gemspec"
 
     - Gemfile.lock
     - CHANGELOG.md
     - LICENSE.txt
     - README.md
+    - Rakefile
+    - bridgetown.automation.rb
 
     - script/**/*
     - vendor/**/*

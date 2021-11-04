@@ -2,7 +2,7 @@
 
 require_relative "./helper"
 
-class TestSamplePlugin < Minitest::Test
+class TestSamplePlugin < Bridgetown::TestCase
   def setup
     @site = Bridgetown::Site.new(Bridgetown.configuration(
                                    "root_dir"    => root_dir,

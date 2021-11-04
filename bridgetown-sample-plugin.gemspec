@@ -21,6 +21,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "bridgetown", ">= 0.15", "< 2.0"
 
   spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake", "~> 12.0"
-  spec.add_development_dependency "rubocop-bridgetown", "~> 0.2"
+  spec.add_development_dependency "rake", ">= 13.0"
+  spec.add_development_dependency "rubocop-bridgetown", "~> 0.3"
 end
