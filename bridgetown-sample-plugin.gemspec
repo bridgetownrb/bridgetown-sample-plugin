@@ -16,9 +16,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.metadata      = { "yarn-add" => "bridgetown-sample-plugin@#{SamplePlugin::VERSION}" }
 
-  spec.required_ruby_version = ">= 2.5.0"
+  spec.required_ruby_version = ">= 2.7.0"
 
-  spec.add_dependency "bridgetown", ">= 0.15", "< 2.0"
+  spec.add_dependency "bridgetown", ">= 1.0", "< 2.0"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake", ">= 13.0"
