@@ -16,8 +16,8 @@ $ bundle add my-awesome-plugin -g bridgetown_plugins
 
 Or if there's a `bridgetown.automation.rb` automation script, you can run that instead for guided setup:
 
-```ruby
-$ bundle exec bridgetown apply https://github.com/username/my-awesome-plugin
+```shell
+$ bin/bridgetown apply https://github.com/username/my-awesome-plugin
 ```
 
 ## Usage
