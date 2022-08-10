@@ -9,5 +9,3 @@ module SamplePlugin
     end
   end
 end
-
-SamplePlugin::Builder.register
