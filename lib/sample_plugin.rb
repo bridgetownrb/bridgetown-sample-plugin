@@ -6,7 +6,7 @@ require "sample_plugin/builder"
 # @param config [Bridgetown::Configuration::ConfigurationDSL]
 Bridgetown.initializer :sample_plugin do |config|
   # Add code here which will run when a site includes
-  # `init :"sample-plugin"`
+  # `init :sample_plugin`
   # in its configuration
 
   # Add default configuration data:
@@ -19,8 +19,8 @@ Bridgetown.initializer :sample_plugin do |config|
   # You can optionally supply a source manifest:
   config.source_manifest(
     origin: SamplePlugin,
-    components: File.expand_path("../tent", __dir__),
-    layouts: File.expand_path("../laycomponents", __dir__),
-    content: File.expand_path("../conouts", __dir__)
+    components: File.expand_path("../components", __dir__),
+    layouts: File.expand_path("../layouts", __dir__),
+    content: File.expand_path("../content", __dir__)
   )
 end

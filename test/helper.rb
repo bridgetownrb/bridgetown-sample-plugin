@@ -4,7 +4,7 @@ require "minitest/autorun"
 require "minitest/reporters"
 require "shoulda"
 require "bridgetown"
-require File.expand_path("../lib/sample-plugin", __dir__)
+require File.expand_path("../lib/sample_plugin", __dir__)
 
 Bridgetown.logger.log_level = :error
 
