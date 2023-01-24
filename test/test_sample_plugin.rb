@@ -4,20 +4,23 @@ require_relative "./helper"
 
 class TestSamplePlugin < Bridgetown::TestCase
   def setup
-    @site = Bridgetown::Site.new(Bridgetown.configuration(
-                                   "root_dir"    => root_dir,
-                                   "source"      => source_dir,
-                                   "destination" => dest_dir,
-                                   "quiet"       => true
-                                 ))
+    @config = Bridgetown.configuration(
+      "root_dir"    => root_dir,
+      "source"      => source_dir,
+      "destination" => dest_dir,
+      "quiet"       => true
+    )
+    @config.run_initializers! context: :static
+    @site = Bridgetown::Site.new(@config)
+
+    with_metadata title: "My Awesome Site" do
+      @site.process
+    end
   end
 
   context "sample plugin" do
     setup do
-      with_metadata title: "My Awesome Site" do
-        @site.process
-        @contents = File.read(dest_dir("index.html"))
-      end
+      @contents = File.read(dest_dir("index.html"))
     end
 
     should "output the overridden metadata" do

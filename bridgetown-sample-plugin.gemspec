@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/sample-plugin/version"
+require_relative "lib/sample_plugin/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "bridgetown-sample-plugin"
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.7.0"
 
-  spec.add_dependency "bridgetown", ">= 1.0", "< 2.0"
+  spec.add_dependency "bridgetown", ">= 1.2.0.beta5", "< 2.0"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake", ">= 13.0"
