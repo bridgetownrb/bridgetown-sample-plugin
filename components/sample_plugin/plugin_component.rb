@@ -1,3 +1,4 @@
+# rubocop:disable all
 module SamplePlugin
   class PluginComponent < Bridgetown::Component
     def initialize(hi:)
@@ -13,3 +14,4 @@ module SamplePlugin
     end
   end
 end
+# rubocop:enable all

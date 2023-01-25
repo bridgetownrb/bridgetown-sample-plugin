@@ -2,8 +2,10 @@
 
 require "minitest/autorun"
 require "minitest/reporters"
-require "shoulda"
 require "bridgetown"
+
+Bridgetown.begin!
+
 require File.expand_path("../lib/sample_plugin", __dir__)
 
 Bridgetown.logger.log_level = :error
@@ -16,6 +18,8 @@ Minitest::Reporters.use! [
 
 module Bridgetown
   class TestCase < Minitest::Test
+    extend Minitest::Spec::DSL
+
     ROOT_DIR = File.expand_path("fixtures", __dir__)
     SOURCE_DIR = File.join(ROOT_DIR, "src")
     DEST_DIR   = File.expand_path("dest", __dir__)
