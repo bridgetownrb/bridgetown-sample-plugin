@@ -1,9 +1,17 @@
 # If your plugin requires a lot of steps to get set up, consider writing an automation to help guide users.
 # You could set up and configure all sorts of things, for example:
 #
-# add_bridgetown_plugin("my-plugin")
+# add_gem("my_plugin")
 #
-# add_yarn_for_gem("my-plugin")
+# add_yarn_for_gem("my_plugin")
+#
+# add_initializer :"my_plugin" do
+#   <<~RUBY
+#     do
+#       some_config_key 12345
+#     end
+#   RUBY
+# end
 #
 # create_builder "my_nifty_builder.rb" do
 #   <<~RUBY
@@ -17,17 +25,16 @@
 #
 # javascript_import do
 #   <<~JS
-#     import { MyPlugin } from "my-plugin"
+#     import { MyPlugin } from "my_plugin"
 #   JS
 # end
 #
-# javascript_import 'import "my-plugin.css"'
+# javascript_import 'import "my_plugin/frontend/styles/index.css"'
 #
 # create_file "src/_data/plugin_data.yml" do
 #   <<~YAML
 #     data:
-#       goes:
-#         here
+#       goes: here
 #   YAML
 # end
 #

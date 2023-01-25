@@ -1,6 +1,6 @@
 /* Use in your app by simply adding to your app's index.css:
 
-@import "bridgetown-sample-plugin/frontend/styles";
+@import "bridgetown-sample-plugin/frontend/styles/index.css";
 */
 
 body {
