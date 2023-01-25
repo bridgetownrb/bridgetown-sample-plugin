@@ -12,5 +12,8 @@
   "private": false,
   "files": [
     "frontend"
-  ]
+  ],
+  "dependencies": {
+    "bridgetown-sample-plugin": "0.1.3"
+  }
 }

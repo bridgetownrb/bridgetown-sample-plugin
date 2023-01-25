@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module SamplePlugin
+module BridgetownSamplePlugin
   class Builder < Bridgetown::Builder
     def build
       liquid_tag "sample_plugin" do

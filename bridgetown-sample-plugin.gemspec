@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/sample_plugin/version"
+require_relative "lib/bridgetown-sample-plugin/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "bridgetown-sample-plugin"
-  spec.version       = SamplePlugin::VERSION
+  spec.version       = BridgetownSamplePlugin::VERSION
   spec.author        = "Bridgetown Team"
   spec.email         = "maintainers@bridgetownrb.com"
   spec.summary       = "Sample code for creating new Bridgetown plugins"
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r!^(test|script|spec|features|frontend)/!) }
   spec.test_files    = spec.files.grep(%r!^test/!)
   spec.require_paths = ["lib"]
-  spec.metadata      = { "yarn-add" => "bridgetown-sample-plugin@#{SamplePlugin::VERSION}" }
+  spec.metadata      = { "yarn-add" => "bridgetown-sample-plugin@#{BridgetownSamplePlugin::VERSION}" }
 
   spec.required_ruby_version = ">= 2.7.0"
 

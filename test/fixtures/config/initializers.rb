@@ -3,5 +3,5 @@
 Bridgetown.configure do |config|
   config.timezone = "UTC"
 
-  init :sample_plugin
+  init :"bridgetown-sample-plugin"
 end
