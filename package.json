@@ -1,5 +1,5 @@
 {
-  "name": "bridgetown-sample-plugin",
+  "name": "sample_plugin",
   "version": "0.1.0",
   "main": "frontend/javascript/index.js",
   "repository": {
