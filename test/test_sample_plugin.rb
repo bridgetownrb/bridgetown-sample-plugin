@@ -18,16 +18,16 @@ class TestSamplePlugin < Bridgetown::TestCase
     end
   end
 
-  context "sample plugin" do
-    setup do
+  describe "sample plugin" do
+    before do
       @contents = File.read(dest_dir("index.html"))
     end
 
-    should "output the overridden metadata" do
+    it "outputs the overridden metadata" do
       assert_includes @contents, "<title>My Awesome Site</title>"
     end
 
-    should "output the sample Liquid tag" do
+    it "outputs the sample Liquid tag" do
       assert_includes @contents, "This plugin works!"
     end
   end
