@@ -4,27 +4,31 @@ require_relative "./helper"
 
 class TestSamplePlugin < Bridgetown::TestCase
   def setup
-    @site = Bridgetown::Site.new(Bridgetown.configuration(
-                                   "root_dir"    => root_dir,
-                                   "source"      => source_dir,
-                                   "destination" => dest_dir,
-                                   "quiet"       => true
-                                 ))
+    Bridgetown.reset_configuration!
+    @config = Bridgetown.configuration(
+      "root_dir"    => root_dir,
+      "source"      => source_dir,
+      "destination" => dest_dir,
+      "quiet"       => true
+    )
+    @config.run_initializers! context: :static
+    @site = Bridgetown::Site.new(@config)
+
+    with_metadata title: "My Awesome Site" do
+      @site.process
+    end
   end
 
-  context "sample plugin" do
-    setup do
-      with_metadata title: "My Awesome Site" do
-        @site.process
-        @contents = File.read(dest_dir("index.html"))
-      end
+  describe "sample plugin" do
+    before do
+      @contents = File.read(dest_dir("index.html"))
     end
 
-    should "output the overridden metadata" do
+    it "outputs the overridden metadata" do
       assert_includes @contents, "<title>My Awesome Site</title>"
     end
 
-    should "output the sample Liquid tag" do
+    it "outputs the sample Liquid tag" do
       assert_includes @contents, "This plugin works!"
     end
   end

@@ -2,7 +2,7 @@
 
 _NOTE: This isn't a real plugin! Copy this sample code and use it to create your own Ruby gem! [Help guide here…](https://www.bridgetownrb.com/docs/plugins)_ 😃
 
-_You can run_ `bridgetown plugins new` _to easily set up a customized verison of this starter repo._
+_You can run_ `bridgetown plugins new` _to easily set up a customized version of this starter repo._
 
 A Bridgetown plugin to [fill in the blank]…
 
@@ -11,13 +11,19 @@ A Bridgetown plugin to [fill in the blank]…
 Run this command to add this plugin to your site's Gemfile:
 
 ```shell
-$ bundle add my-awesome-plugin -g bridgetown_plugins
+bundle add my_awesome_plugin
+```
+
+Then add the initializer to your configuration in `config/initializers.rb`:
+
+```ruby
+init :my_awesome_plugin
 ```
 
 Or if there's a `bridgetown.automation.rb` automation script, you can run that instead for guided setup:
 
 ```shell
-$ bin/bridgetown apply https://github.com/username/my-awesome-plugin
+bin/bridgetown apply https://github.com/username/my_awesome_plugin
 ```
 
 ## Usage
