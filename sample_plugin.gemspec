@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   #   "bridgetown_features" => "true"
   # }
 
-  spec.required_ruby_version = ">= 2.7.0"
+  spec.required_ruby_version = ">= 3.1.0"
 
   spec.add_dependency "bridgetown", ">= 1.2.0", "< 3.0"
 
