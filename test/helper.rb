@@ -11,7 +11,7 @@ require File.expand_path("../lib/sample_plugin", __dir__)
 Bridgetown.logger.log_level = :error
 
 Minitest::Reporters.use! [
-  Minitest::Reporters::DefaultReporter.new(
+  Minitest::Reporters::SpecReporter.new(
     color: true
   ),
 ]
