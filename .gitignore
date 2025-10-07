@@ -1,7 +1,6 @@
 /vendor
 /.bundle/
 /.yardoc
-/Gemfile.lock
 /_yardoc/
 /coverage/
 /doc/
@@ -14,9 +13,7 @@
 *.a
 mkmf.log
 *.gem
-Gemfile.lock
 .bundle
-.ruby-version
 
 # Node
 node_modules
