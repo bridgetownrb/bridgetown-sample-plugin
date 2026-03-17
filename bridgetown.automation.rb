@@ -1,11 +1,15 @@
 # If your plugin requires a lot of steps to get set up, consider writing an automation to help guide users.
 # You could set up and configure all sorts of things, for example:
 #
-# add_gem("my_plugin")
+# add_gem "my_plugin"
 #
-# add_yarn_for_gem("my_plugin")
+# add_npm_for_gem "my_plugin"
 #
-# add_initializer :"my_plugin" do
+# run "bundle add some_other_gem"
+#
+# apply "#{__dir__}/additional.automation.rb"
+#
+# add_initializer :my_plugin do
 #   <<~RUBY
 #     do
 #       some_config_key 12345
@@ -40,12 +44,14 @@
 #
 # color = ask("What's your favorite color?")
 #
-# append_to_file "bridgetown.config.yml" do
-#   <<~YAML
-#
-#     my_plugin:
-#       favorite_color: #{color}
+# ruby_configure :favorite_color do
+#   <<~RUBY
+#     favorite_color "#{color}"
 #   YAML
 # end
 #
-# Read the Automations documentation: https://www.bridgetownrb.com/docs/automations
+# To learn more, read the Automations documentation:
+# * https://www.bridgetownrb.com/docs/automations
+# and the API-level documentation:
+# * Freyia Automations: https://www.rubydoc.info/gems/freyia/Freyia/Automations
+# * Bridgetown Automations: https://api.bridgetownrb.com/Bridgetown/Commands/Actions.html

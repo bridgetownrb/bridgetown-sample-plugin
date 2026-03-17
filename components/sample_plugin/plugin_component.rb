@@ -1,17 +1,17 @@
-# rubocop:disable all
 module SamplePlugin
   class PluginComponent < Bridgetown::Component
     def initialize(hi:)
       @hi = hi
     end
 
-    # You can remove this and add an ERB, Serbea, etc. template file…or you can
-    # use something like Phlex if you're feeling adventurous!
+    # You can write a template using Streamlined syntax, or add a
+    # sidecar ERB or Serbea file. Docs available here:
+    # https://www.bridgetownrb.com/docs/template-engines/erb-and-beyond
     def template
-      <<~HTML
-        Well hello there #{hi}!
+      html -> { <<~HTML
+        Well hello there #{text -> { hi }}!
       HTML
+      }
     end
   end
 end
-# rubocop:enable all
